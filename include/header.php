@@ -10,7 +10,6 @@
     
     <body>
     <header>
-        <img class="logo" src="img/logo.png" width="30px" height="30px">
         <h1 class="companyName">MyCo</h1>
             <input class="mobileMenuCheck" type="checkbox" id="toggle">
             <label class="mobileMenuLabel" for="toggle">&#9776;</label>
