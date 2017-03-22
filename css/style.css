@@ -81,7 +81,9 @@ header{
     color: #FFF;
     position: fixed;
 }
-
+.companyName {
+    margin: 30px 30px;
+}
 
 /* slider */
 
@@ -133,4 +135,21 @@ header{
 
 @media screen and (min-width: 48em){
     .events{flex-direction: row; align-content: center; align-self: center; justify-content: center;}
+    
+    .mobileMenuLabel,
+    .mobileMenuCheck{
+        display: none;
+    }
+    nav{
+        top: 1.5em;
+        right: 5em;
+       max-height: 100px;
+    }
+    nav ul{
+    display: flex;
+        flex-direction: row;
+        width: 530px;
+    }
+    
 }
+
