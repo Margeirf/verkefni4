@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 *,
 *:after,
 *:before{
     box-sizing: border-box;
+    font-family: 'Oswald';
 }
 body{
     margin: 0;
@@ -131,7 +133,47 @@ header{
 .headerSpacer{width: 100%; height: 100px;}
 /* end extra */
 
-
+input{
+    width: 100%;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.containerEvent {
+    display: flex;
+    flex-direction: column;
+}
+.InfoEvent{
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    width: 100%;
+}
+.skraning{
+    display: flex;
+    order: 3;
+    width: 100%;
+}
+.imgEvent{
+    display: flex;
+    order: 1;
+    width: 100%;
+}
+.imgEvent img{
+    width: 100%;
+}
 
 @media screen and (min-width: 48em){
     .events{flex-direction: row; align-content: center; align-self: center; justify-content: center;}
@@ -151,5 +193,14 @@ header{
         width: 530px;
     }
     
+    .containerEvent{
+        flex-direction: row;
+    }
+    .InfoEvent,
+    .skraning,
+    .imgEvent{
+        width: 33.333%;
+    }
 }
+
 
